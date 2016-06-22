@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title>Bookish</title>
+
+    <script src="./angular.min.js"></script>
   </head>
 
   <body>
-    <div>Hello World!</div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" ng-model="yourName" placeholder="Enter a name here">
+
+      <hr />
+
+      <h1>Hello {{yourName}}!</h1>
+    </div>
   </body>
 </html>
 
