@@ -20,3 +20,8 @@ This is one of the practices from our Thunder special activity.
 * db migration
 * seed, separated?
 
+What's Next?
+
+* using bower to install angularjs
+* using npm to install angularjs
+
