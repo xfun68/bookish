@@ -10,7 +10,8 @@ This is one of the practices from our Thunder special activity.
 * header
 * nav bar
 * fuild layout or bootstrap css
-* static book name list
+* body background color
+* static book list without paginator
 * spring boot hello world using Gradle as build tool
 * return json to frontend
 * define book model object and convert to resource
