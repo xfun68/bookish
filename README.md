@@ -11,7 +11,7 @@ This is one of the practices from our Thunder special activity.
 * nav bar
 * static book name list
 * fuild layout
-* spring boot hello world
+* spring boot hello world using Gradle as build tool
 * return json to frontend
 * define book model object and convert to resource
 * setup db and create tables
