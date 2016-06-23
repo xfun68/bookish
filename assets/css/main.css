@@ -4,7 +4,7 @@ body {
 
 .page-wrap {
   text-align: left;
-  width: 1260px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
