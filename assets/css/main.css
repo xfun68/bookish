@@ -9,9 +9,34 @@ body {
   margin: 0 auto;
 }
 
-.row div {
+.row .column {
   height: 300px;
   border: 1px solid rgba(86,61,124,.2);
   background-color: #C1C0C0;
+}
+
+.book .cover {
+  min-width: 210px;
+}
+
+.book .cover img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: auto;
+}
+
+.book .info .name {
+  min-width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book .info .authors {
+  min-width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
