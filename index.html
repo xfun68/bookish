@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,11 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/angular.min.js"></script>
+
+    <script src="./assets/js/app.js"></script>
   </head>
 
-  <body>
+  <body ng-app="bookish">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -37,148 +39,16 @@
 
     <div class="page-wrap">
       <div class="container">
-        <div class="row">
-          <div class="column col-xs-12 col-sm-6 col-md-3">
+        <div class="row" ng-controller="BookListCtrl as vm">
+          <div class="column col-xs-12 col-sm-6 col-md-3" ng-repeat="book in vm.books">
             <div class="book">
               <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
+                <img ng-src="./images/thumbnails/{{book.asin}}.jpg" alt="book cover">
               </div>
               <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-3">
-            <div class="book">
-              <div class="cover">
-                <img src="./images/thumbnails/B001130JN8.jpg" alt="book cover">
-              </div>
-              <div class="info">
-                <h5 class="name">设计模式：可复用面向对象软件的基础</h5>
-                <p class="authors"><span class="label">作者：</span><span class="content truncate">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 李英军</span></p>
-                <p class="pulication-date"><span class="label">出版日期：</span><span class="content">2006-12-31</span></p>
+                <h5 class="name" ng-bind="book.title"></h5>
+                <p class="authors"><span class="label">作者：</span><span class="content truncate" ng-bind="book.author"></span></p>
+                <p class="pulication-date"><span class="label">出版日期：</span><span class="content" ng-bind="book.published_at"></span></p>
               </div>
             </div>
           </div>
