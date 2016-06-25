@@ -12,6 +12,7 @@ This is one of the practices from our Thunder special activity.
 * fuild layout or bootstrap css
 * body background color
 * static book list without paginator
+* angular books
 * spring boot hello world using Gradle as build tool
 * return json to frontend
 * define book model object and convert to resource
