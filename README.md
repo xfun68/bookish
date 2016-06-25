@@ -13,6 +13,7 @@ This is one of the practices from our Thunder special activity.
 * body background color
 * static book list without paginator
 * angular books
+* extract nav bar code out of the index.html
 * spring boot hello world using Gradle as build tool
 * return json to frontend
 * define book model object and convert to resource
