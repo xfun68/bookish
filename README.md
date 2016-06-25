@@ -22,7 +22,11 @@ This is one of the practices from our Thunder special activity.
 * db migration
 * seed, separated?
 
-What's Next?
+## Thoughts
+
+* should build a static page with books before introduce ng in
+
+## What's Next?
 
 * using bower to install angularjs
 * using npm to install angularjs
