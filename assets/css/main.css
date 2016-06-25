@@ -22,8 +22,8 @@ body {
 .book .cover img {
   display: block;
   margin: 0 auto;
-  width: 140px;
-  height: auto;
+  width: auto;
+  height: 185px;
 }
 
 .book .info .name {
