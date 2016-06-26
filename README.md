@@ -14,8 +14,8 @@ This is one of the practices from our Thunder special activity.
 * static book list without paginator
 * angular books
 * extract nav bar code out of the index.html
+* introduce ng route using Python SimpleHTTPServer
 * spring boot hello world using Gradle as build tool
-* introduce ng route
 * return json data as static resource
 * return json to frontend
 * define book model object and convert to resource
