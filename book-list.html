@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row" ng-controller="BookListCtrl as vm">
+        <div class="column col-xs-12 col-sm-6 col-md-3" ng-repeat="book in vm.books">
+            <div class="book">
+                <div class="cover">
+                    <img ng-src="./images/thumbnails/{{book.asin}}.jpg" alt="book cover">
+                </div>
+                <div class="info">
+                    <h5 class="name" ng-bind="book.title"></h5>
+                    <p class="authors"><span>作者：</span><span class="content truncate" ng-bind="book.author"></span></p>
+                    <p class="pulication-date"><span>出版日期：</span><span class="content" ng-bind="book.published_at"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

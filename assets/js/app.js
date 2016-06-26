@@ -1,6 +1,17 @@
 'use strict';
 
-var app = angular.module('bookish', []);
+var app = angular.module('bookish', ['ngRoute']);
+
+app.config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
+        .when('/phones', {
+            templateUrl: 'book-list.html',
+            controller: 'BookListCtrl'
+        })
+        .otherwise({
+            redirectTo: '/phones'
+        });
+}]);
 
 app.controller('BookListCtrl', [function () {
     var vm = this;
