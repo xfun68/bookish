@@ -32,6 +32,7 @@ This is one of the practices from our Thunder special activity.
 
 ## What's Next?
 
+* config '/' path for boot app to use index.html
 * using bower to install angularjs
 * using npm to install angularjs
 * less and sass
