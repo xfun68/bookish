@@ -23,6 +23,7 @@ This is one of the practices from our Thunder special activity.
 * connect DB and get data from db then pass to frontend
 * db migration
 * seed, separated?
+* replace ng-route with ui-route
 
 ## Thoughts
 
